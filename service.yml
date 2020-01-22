@@ -1,6 +1,8 @@
 name: cloud-mariadb
 type: db
 title: Cloud MariaDB
+options:
+- version: 10.3
 hostname: mariadb
 labels:
 - mariadb
