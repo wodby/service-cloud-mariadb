@@ -1,0 +1,41 @@
+name: cloud-mariadb
+type: db
+title: Cloud MariaDB
+hostname: mariadb
+labels:
+- mariadb
+- mysql
+tokens:
+- name: type
+  value: mysql
+  export: TYPE
+- name: host
+  value: '[ "wodby.host" ]'
+  export: HOST
+- name: port
+  value: '[ "wodby.containers.mariadb.port" ]'
+  export: PORT
+- name: username
+  generate: '[ "wodby.stack.name" ]'
+  export: USERNAME
+- name: database
+  generate: '[ "wodby.stack.name" ]'
+  export: DATABASE
+- name: password
+  generate: '[ "wodby.password", {"length": 32} ]'
+  export: PASSWORD
+- name: root_password
+  generate: '[ "wodby.password", {"length": 32} ]'
+  
+integrations:
+- name: db
+  type: db
+  labels:
+  - mariadb
+  required: true
+  subtype: mariadb
+  # optional field, e.g. connect a sidecar metrics container to a third-party monitoring service.
+  # container: ""
+  params:
+  - name: MYSQL_COLLATION
+    value: utf8-multibyte
