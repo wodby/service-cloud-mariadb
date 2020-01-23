@@ -36,8 +36,6 @@ integrations:
   type: db
   required: true
   subtype: mariadb
-  labels:
-  - rds
   # optional field, e.g. connect a sidecar metrics container to a third-party monitoring service.
   # container: ""
   params:
