@@ -13,24 +13,7 @@ tokens:
 - name: type
   value: mysql
   export: TYPE
-- name: host
-  value: '[ "wodby.host" ]'
-  export: HOST
-- name: port
-  value: '[ "wodby.containers.mariadb.port" ]'
-  export: PORT
-- name: username
-  generate: '[ "wodby.stack.name" ]'
-  export: USERNAME
-- name: database
-  generate: '[ "wodby.stack.name" ]'
-  export: DATABASE
-- name: password
-  generate: '[ "wodby.password", {"length": 32} ]'
-  export: PASSWORD
-- name: root_password
-  generate: '[ "wodby.password", {"length": 32} ]'
-  
+
 integrations:
 - name: db
   title: Managed DB service
