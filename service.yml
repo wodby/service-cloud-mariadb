@@ -9,10 +9,6 @@ hostname: mariadb
 labels:
 - mariadb
 - mysql
-tokens:
-- name: type
-  value: mysql
-  export: TYPE
 
 integrations:
 - name: db
