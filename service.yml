@@ -5,19 +5,7 @@ external: true
 options:
 - version: 10.4
 - version: 10.3
-hostname: mariadb
 labels:
 - mariadb
-- mysql
-
-integrations:
-- name: db
-  title: Managed DB service
-  type: db
-  required: true
-  subtype: mariadb
-  # optional field, e.g. connect a sidecar metrics container to a third-party monitoring service.
-  # container: ""
-  params:
-  - name: MYSQL_COLLATION
-    value: utf8-multibyte
+database:
+  type: mariadb
