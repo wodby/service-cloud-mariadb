@@ -9,3 +9,12 @@ labels:
 - mariadb
 database:
   type: mariadb
+  db: 
+    charset: 'utf8mb4'
+    collation: 'utf8mb4_0900_ai_ci'    
+  user:
+    password: '{{password}}'
+tokens:
+- name: password
+  generate:
+    regex: '[0-9a-z-]{32}'
