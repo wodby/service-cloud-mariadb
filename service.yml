@@ -10,9 +10,11 @@ labels:
 database:
   type: mariadb
   db: 
+    name: '{{wodby_app_name}}_{{wodby_app_instance_name}}'    
     charset: 'utf8mb4'
     collation: 'utf8mb4_0900_ai_ci'    
   user:
+    name: '{{wodby_app_name}}_{{wodby_app_instance_name}}'    
     password: '{{password}}'
 tokens:
 - name: password
