@@ -3,8 +3,10 @@ type: db
 title: Cloud MariaDB
 external: true
 options:
+- version: 10.5
 - version: 10.4
 - version: 10.3
+- version: 10.2
 labels:
 - mariadb
 database:
