@@ -12,6 +12,7 @@ labels:
 - mariadb
 database:
   type: mariadb
+  kind: mariadb
   db: 
     name: '{{app.name}}_{{instance.name}}'    
     charset: 'utf8mb4'
