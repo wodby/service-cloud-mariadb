@@ -1,4 +1,4 @@
-name: mariadb-cloud
+name: cloud-mariadb
 icon: mariadb
 type: db
 title: Cloud MariaDB
