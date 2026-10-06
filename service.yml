@@ -2,6 +2,7 @@ name: cloud-mariadb
 icon: mariadb
 type: db
 title: Cloud MariaDB
+guidance: GUIDANCE.md
 external: true
 options:
 - version: '10.5'
